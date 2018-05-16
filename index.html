@@ -35,12 +35,14 @@
                 <div class="resp" id="menu_resp">
                     <a>Menu</a>
                 </div>
-                <ul id="nav_menu" ng-init="menus[0].activo = true">
-                    <li ng-repeat="(key, menu) in menus" ng-class="{activo: menu.activo}">
-                        <a href="{{ menu.href }}" ng-click="activar(menu)"><i class="{{ menu.clase }}"></i> {{ menu.label }}</a>
-                    </li>
-                    <li ng-if="sesion.sesion == 1"><a ng-click="cerrarSesion()"><i class="fi-power"></i> Cerrar sesi&oacute;n</a></li>
-                </ul>
+                <div style="overflow: auto">
+                    <ul id="nav_menu" ng-init="menus[0].activo" = true>
+                        <li ng-repeat="(key, menu) in menus" ng-class="{activo: menu.activo}">
+                            <a href="{{ menu.href }}" ng-click="activar(menu)"><i class="{{ menu.clase }}"></i> {{ menu.label }}</a>
+                        </li>
+                        <li ng-if="sesion.sesion == 1"><a ng-click="cerrarSesion()"><i class="fi-power"></i> Cerrar sesi&oacute;n</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
         <div class="medium-9 large-10 columns contenido">
