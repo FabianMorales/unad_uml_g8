@@ -13,6 +13,10 @@ body{
     overflow-x: hidden;
 }
 
+hr{
+    max-width: 100%;
+}
+
 .columns.menu{
     height: 100%;
 }
@@ -29,7 +33,7 @@ body{
     height: 100%;
     width: inherit;
     position: fixed;
-    background-color: #ffc680;
+    background-color: #1d1c1c;
     color: #fff;
     padding: 20px 0;
 }
@@ -48,7 +52,7 @@ body{
 }
 
 .menu nav ul li.activo{
-    background-color: #add8e6;
+    background-color: #f5941c;
 }
 
 .menu nav ul li.activo:after {
@@ -64,7 +68,7 @@ body{
 }
 
 .menu nav ul li:hover {
-    background-color: #add8e6;
+    background-color: #f9ca90;
     opacity: 0.8;
 }
 
@@ -97,7 +101,7 @@ body{
 }
 
 h2.titulo {
-    border-bottom: 3px solid #0c4d78;
+    border-bottom: 3px solid #1d1c1c;
     display: block;
     margin-bottom: 30px;
     padding-bottom: 5px;
@@ -113,7 +117,7 @@ h2.titulo:after {
     top: 3px;
     left: 0;
     content: ' ';
-    border-bottom: 3px solid #82cdff;
+    border-bottom: 3px solid #f5941c;
     z-index: 10;
 }
 
@@ -193,6 +197,20 @@ a.social:hover{
 
 .social.gplus{
     background-color: #dc493c;
+}
+
+.button {
+    background-color: #f5941c;
+    color: #fff;
+}
+
+.button:focus, .button:hover {
+    background-color: #fcc889;
+    color: #fff;
+}
+
+dl, ol, ul {
+    list-style-position: inside;
 }
 
 @media all and (max-width: 890px){

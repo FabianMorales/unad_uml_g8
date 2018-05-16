@@ -1,16 +1,20 @@
 (function($angular, _, $window){
     $window.$angular.config(['$routeProvider', function($routeProvider) {
-       $routeProvider
-       .when('/', {
-          templateUrl: 'templates/registro.html', controller: 'MainController'
-       })
-       .otherwise({
-            templateUrl: 'templates/registro.html', controller: 'MainController'
-       });
+        $routeProvider
+        .when('/', {
+            templateUrl: 'templates/inicio.html', controller: 'MainController'
+        })
+        .when('/login', {
+            templateUrl: 'templates/login.html', controller: 'MainController'
+        })
+        .otherwise({
+            templateUrl: 'templates/inicio.html', controller: 'MainController'
+        });
     }])
-	.controller('MainController', ['$scope', '$http', 'sesion', '$location', function ($scope, $http, sesion, $location) {
+	.controller('MainController', ['$scope', '$http', '$location', function ($scope, $http, sesion, $location) {
         $scope.menus = [
-            { label: 'Inicio', clase:'fi-home', href: '#/', activo: false },
+            { label: 'Inicio', clase:'fi-torso', href: '#/', activo: false },
+            { label: 'Login', clase:'fi-home', href: '#/login', activo: false },
             { label: 'Gestión de cargos', clase:'fi-torsos-all', href: '#/cargos', activo: false },
             { label: 'Gestión de empleados', clase:'fi-torso', href: '#/empleados', activo: false },
             { label: 'Gestión de turnos', clase:'fi-clipboard-pencil', href: '#/turnos', activo: false },
