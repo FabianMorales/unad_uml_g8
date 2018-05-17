@@ -7,8 +7,14 @@
         .when('/login', {
             templateUrl: 'templates/login.html', controller: 'MainController'
         })
+        .when('/registro', {
+            templateUrl: 'templates/registro.html', controller: 'MainController'
+        })
         .when('/clientes/lista', {
             templateUrl: 'templates/clientes/lista.html', controller: 'MainController'
+        })
+        .when('/clientes/editar', {
+            templateUrl: 'templates/clientes/form.html', controller: 'MainController'
         })
         .otherwise({
             templateUrl: 'templates/inicio.html', controller: 'MainController'
@@ -18,10 +24,10 @@
         $scope.menus = [
             { label: 'Inicio', clase:'fi-home', href: '#/', activo: false },
             { label: 'Login', clase:'fi-torso', href: '#/login', activo: false },
-            { label: 'Registro de usuarios', clase:'fi-plus', href: '#/login', activo: false },
+            { label: 'Registro de usuarios', clase:'fi-plus', href: '#/registro', activo: false },
+            { label: 'Gestión de clientes', clase:'fi-torso', href: '#/clientes/lista', activo: false },
             { label: 'Gestión de roles', clase:'fi-torsos-all', href: '#/cargos', activo: false },
             { label: 'Gestión de permisos', clase:'fi-clipboard-pencil', href: '#/turnos', activo: false },
-            { label: 'Gestión de clientes', clase:'fi-torso', href: '#/clientes/lista', activo: false },
             { label: 'Gestión de proveedores', clase:'fi-torso', href: '#/empleados', activo: false },
             { label: 'Gestión de usuarios', clase:'fi-torsos', href: '#/empleados', activo: false },
             { label: 'Gestión de productos', clase:'fi-book', href: '#/empleados', activo: false },
