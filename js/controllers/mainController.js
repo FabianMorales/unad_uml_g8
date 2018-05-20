@@ -16,6 +16,12 @@
         .when('/clientes/editar', {
             templateUrl: 'templates/clientes/form.html', controller: 'MainController'
         })
+        .when('/proveedores/lista', {
+            templateUrl: 'templates/proveedores/lista.html', controller: 'MainController'
+        })
+        .when('/proveedores/editar', {
+            templateUrl: 'templates/proveedores/form.html', controller: 'MainController'
+        })
         .when('/productos', {
             templateUrl: 'templates/productos/catalogo.html', controller: 'MainController'
         })
@@ -25,11 +31,20 @@
         .when('/productos/editar', {
             templateUrl: 'templates/productos/form.html', controller: 'MainController'
         })
+        .when('/despachos/lista', {
+            templateUrl: 'templates/despachos/lista.html', controller: 'MainController'
+        })
+        .when('/despachos/editar', {
+            templateUrl: 'templates/despachos/form.html', controller: 'MainController'
+        })
         .when('/backups/lista', {
             templateUrl: 'templates/backups/lista.html', controller: 'MainController'
         })
         .when('/backups/programar', {
             templateUrl: 'templates/backups/form.html', controller: 'MainController'
+        })
+        .when('/reportes', {
+            templateUrl: 'templates/reporte.html', controller: 'MainController'
         })
         .otherwise({
             templateUrl: 'templates/inicio.html', controller: 'MainController'
@@ -49,7 +64,9 @@
             { label: 'Gestión de ventas', clase:'fi-dollar', href: '#/ventas/lista', activo: false },
             { label: 'Gestión de compras', clase:'fi-shopping-bag', href: '#/compras/lista', activo: false },
             { label: 'Catálogo de productos', clase:'fi-shopping-cart', href: '#/productos', activo: false },
-            { label: 'Respaldo base de datos', clase:'fi-database', href: '#/backups/lista', activo: false }
+            { label: 'Gestión de despachos', clase:'fi-map', href: '#/despachos/lista', activo: false },
+            { label: 'Respaldo base de datos', clase:'fi-database', href: '#/backups/lista', activo: false },
+            { label: 'Reportes', clase:'fi-graph-bar', href: '#/reportes', activo: false }
         ];
         
         $scope.init = function() {
