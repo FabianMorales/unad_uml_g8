@@ -1,0 +1,71 @@
+<h2 class="titulo">Programar Backup</h2>
+
+<div class="row">
+    <div class="medium-3 columns"><label for="frecuencia">Frecuencia</label></div>
+    <div class="medium-8 columns end">
+        <select name="frecuencia">
+            <option>Diaria</option>
+            <option>Semanal</option>
+            <option>Mensual</option>
+        </select>
+    </div>
+</div>
+
+<div class="row">
+    <div class="medium-3 columns"><label>Fecha y hora de ejecución</label></div>
+    <div class="medium-2 columns">
+        <input type="text" placeholder="00:00" moment-picker="turno.inicio_receso" format="HH:mm" />
+    </div>
+    <div class="medium-2 columns end">
+        <input type="text" placeholder="0000-00-00" moment-picker="turno.inicio_receso" format="YYYY-MM-DD" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="medium-3 columns"><label>Archivos por copiar</label></div>
+    <div class="medium-7 columns">
+        <select name="archivos_origen" size="5" multiple>
+            <option>&nbsp;</option>
+            <option>&nbsp;</option>
+            <option>&nbsp;</option>
+            <option>&nbsp;</option>
+            <option>&nbsp;</option>
+        </select>
+    </div>
+    <div class="medium-1 columns end">
+        <a class="tiny button"><i class="fi-plus"></i> Añadir</a>
+        <a class="tiny button alert"><i class="fi-minus"></i> Quitar</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="medium-3 columns"><label for="ruta_destino">Ruta destino</label></div>
+    <div class="medium-8 columns end">
+        <input type="text" name="ruta_destino" id="ruta_destino" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="medium-5 columns">
+        <div class="callout">
+            <h5>Ultimo backup</h5>
+            0000-00-00 00:00:00
+        </div>
+    </div>
+    <div class="medium-5 columns end">
+        <div class="callout">
+            <h5>Próximo backup</h5>
+            0000-00-00 00:00:00
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="medium-12 columns">
+        <input type="button" class="button default" value="Guardar" />
+        <input type="button" class="button warning" value="Ejecutar este backup" />
+        <a href="#/backups/lista" class="button alert">Regresar</a>
+    </div>
+</div>
+<hr />
+<br />

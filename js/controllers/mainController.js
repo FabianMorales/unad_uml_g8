@@ -16,6 +16,21 @@
         .when('/clientes/editar', {
             templateUrl: 'templates/clientes/form.html', controller: 'MainController'
         })
+        .when('/productos', {
+            templateUrl: 'templates/productos/catalogo.html', controller: 'MainController'
+        })
+        .when('/productos/lista', {
+            templateUrl: 'templates/productos/lista.html', controller: 'MainController'
+        })
+        .when('/productos/editar', {
+            templateUrl: 'templates/productos/form.html', controller: 'MainController'
+        })
+        .when('/backups/lista', {
+            templateUrl: 'templates/backups/lista.html', controller: 'MainController'
+        })
+        .when('/backups/programar', {
+            templateUrl: 'templates/backups/form.html', controller: 'MainController'
+        })
         .otherwise({
             templateUrl: 'templates/inicio.html', controller: 'MainController'
         });
@@ -26,15 +41,15 @@
             { label: 'Login', clase:'fi-torso', href: '#/login', activo: false },
             { label: 'Registro de usuarios', clase:'fi-plus', href: '#/registro', activo: false },
             { label: 'Gestión de clientes', clase:'fi-torso', href: '#/clientes/lista', activo: false },
-            { label: 'Gestión de roles', clase:'fi-torsos-all', href: '#/cargos', activo: false },
-            { label: 'Gestión de permisos', clase:'fi-clipboard-pencil', href: '#/turnos', activo: false },
-            { label: 'Gestión de proveedores', clase:'fi-torso', href: '#/empleados', activo: false },
-            { label: 'Gestión de usuarios', clase:'fi-torsos', href: '#/empleados', activo: false },
-            { label: 'Gestión de productos', clase:'fi-book', href: '#/empleados', activo: false },
-            { label: 'Gestión de ventas', clase:'fi-dollar', href: '#/empleados', activo: false },
-            { label: 'Gestión de compras', clase:'fi-shopping-bag', href: '#/empleados', activo: false },
-            { label: 'Catálogo de productos', clase:'fi-shopping-cart', href: '#/empleados', activo: false },
-            { label: 'Respaldo base de datos', clase:'fi-database', href: './api/files/backup', activo: false }
+            { label: 'Gestión de roles', clase:'fi-torsos-all', href: '#/roles/lista', activo: false },
+            { label: 'Gestión de permisos', clase:'fi-clipboard-pencil', href: '#/permisos/lista', activo: false },
+            { label: 'Gestión de proveedores', clase:'fi-torso', href: '#/proveedores/lista', activo: false },
+            { label: 'Gestión de usuarios', clase:'fi-torsos', href: '#/usuarios/lista', activo: false },
+            { label: 'Gestión de productos', clase:'fi-book', href: '#/productos/lista', activo: false },
+            { label: 'Gestión de ventas', clase:'fi-dollar', href: '#/ventas/lista', activo: false },
+            { label: 'Gestión de compras', clase:'fi-shopping-bag', href: '#/compras/lista', activo: false },
+            { label: 'Catálogo de productos', clase:'fi-shopping-cart', href: '#/productos', activo: false },
+            { label: 'Respaldo base de datos', clase:'fi-database', href: '#/backups/lista', activo: false }
         ];
         
         $scope.init = function() {
