@@ -31,6 +31,18 @@
         .when('/productos/editar', {
             templateUrl: 'templates/productos/form.html', controller: 'MainController'
         })
+        .when('/compras/lista', {
+            templateUrl: 'templates/compras/lista.html', controller: 'MainController'
+        })
+        .when('/compras/editar', {
+            templateUrl: 'templates/compras/form.html', controller: 'MainController'
+        })
+        .when('/ventas/lista', {
+            templateUrl: 'templates/ventas/lista.html', controller: 'MainController'
+        })
+        .when('/ventas/editar', {
+            templateUrl: 'templates/ventas/form.html', controller: 'MainController'
+        })
         .when('/despachos/lista', {
             templateUrl: 'templates/despachos/lista.html', controller: 'MainController'
         })

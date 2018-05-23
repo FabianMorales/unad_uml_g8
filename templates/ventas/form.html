@@ -1,0 +1,124 @@
+<h2 class="titulo">Datos de la venta</h2>
+
+<div class="row">
+    <div class="medium-3 columns"><label for="nombre">Tipo de documento</label></div>
+    <div class="medium-8 columns end"><input type="text" name="tipo" value="Venta" readonly /></div>
+</div>
+<div class="row">
+    <div class="medium-3 columns"><label for="fecha">Fecha</label></div>
+    <div class="medium-8 columns end"><input type="text" name="fecha" value="0000-00-00" readonly /></div>
+</div>
+<div class="row">
+    <div class="medium-3 columns"><label for="valor_total">Valor total</label></div>
+    <div class="medium-8 columns end"><input type="text" name="valor_total" value="$000.000" readonly /></div>
+</div>
+<div class="row">
+        <div class="medium-3 columns"><label for="iva">Valor IVA</label></div>
+        <div class="medium-8 columns end"><input type="text" name="iva" value="$0.000" readonly /></div>
+    </div>
+<div class="row">
+    <div class="medium-3 columns"><label for="cliente">Cliente</label></div>
+    <div class="medium-8 columns end">
+        <select name="cliente">
+            <option>Cliente 1</option>
+            <option>Cliente 2</option>
+            <option>Cliente 3</option>
+            <option>Cliente 4</option>
+            <option>Cliente 5</option>
+        </select>
+    </div>
+</div>
+
+<br />
+<hr />
+
+<div class="row">
+    <div class="medium-2 columns item head">Producto</div>
+    <div class="medium-2 columns item head">Cantidad</div>
+    <div class="medium-2 columns item head">Valor Unitario</div>
+    <div class="medium-2 columns item head">Valor IVA</div>
+    <div class="medium-2 columns item head">Valor Total</div>
+    <div class="medium-2 columns item head">&nbsp;</div>
+</div>
+
+<div class="row">
+    <div class="medium-2 columns">
+        <select name="producto">
+            <option>Producto 1</option>
+            <option>Producto 2</option>
+            <option>Producto 3</option>
+            <option>Producto 4</option>
+            <option>Producto 5</option>
+        </select>
+    </div>
+    <div class="medium-2 columns"><input type="text" placeholder="0" /></div>
+    <div class="medium-2 columns"><input type="text" placeholder="$0" readonly /></div>
+    <div class="medium-2 columns"><input type="text" placeholder="$0" readonly /></div>
+    <div class="medium-2 columns"><input type="text" placeholder="$0" readonly /></div>
+    <div class="medium-2 columns"><button class="button"><i class="fi-plus"></i> Agregar</button></div>
+</div>
+
+<hr />
+
+<div class="row">
+    <div class="medium-2 columns item">Producto 1</div>
+    <div class="medium-2 columns item">1</div>
+    <div class="medium-2 columns item">$00.000</div>
+    <div class="medium-2 columns item">$0.000</div>
+    <div class="medium-2 columns item">
+        $000.000   
+    </div>
+    <div class="medium-2 columns item">
+        <a tooltips tooltip-template="Borrar detalle"><i class="fi-trash">&nbsp;</i></a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="medium-2 columns item">Producto 2</div>
+    <div class="medium-2 columns item">1</div>
+    <div class="medium-2 columns item">$00.000</div>
+    <div class="medium-2 columns item">$0.000</div>
+    <div class="medium-2 columns item">
+        $000.000   
+    </div>
+    <div class="medium-2 columns item">
+        <a tooltips tooltip-template="Borrar detalle"><i class="fi-trash">&nbsp;</i></a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="medium-2 columns item">Producto 3</div>
+    <div class="medium-2 columns item">3</div>
+    <div class="medium-2 columns item">$00.000</div>
+    <div class="medium-2 columns item">$0.000</div>
+    <div class="medium-2 columns item">
+        $000.000   
+    </div>
+    <div class="medium-2 columns item">
+        <a tooltips tooltip-template="Borrar detalle"><i class="fi-trash">&nbsp;</i></a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="medium-2 columns item">Producto 4</div>
+    <div class="medium-2 columns item">4</div>
+    <div class="medium-2 columns item">$00.000</div>
+    <div class="medium-2 columns item">$0.000</div>
+    <div class="medium-2 columns item">
+        $000.000   
+    </div>
+    <div class="medium-2 columns item">
+        <a tooltips tooltip-template="Borrar detalle"><i class="fi-trash">&nbsp;</i></a>
+    </div>
+</div>
+
+<br />
+
+<div class="row">
+    <div class="medium-12 columns">
+        <input type="button" class="button default" value="Guardar" />
+        <a href="#/ventas/lista" class="button alert">Regresar</a>
+    </div>
+</div>
+<hr />
+<br />
