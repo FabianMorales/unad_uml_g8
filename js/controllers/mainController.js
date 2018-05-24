@@ -10,6 +10,18 @@
         .when('/registro', {
             templateUrl: 'templates/registro.html', controller: 'MainController'
         })
+        .when('/roles/lista', {
+            templateUrl: 'templates/roles/lista.html', controller: 'MainController'
+        })
+        .when('/roles/editar', {
+            templateUrl: 'templates/roles/form.html', controller: 'MainController'
+        })
+        .when('/permisos/lista', {
+            templateUrl: 'templates/permisos/lista.html', controller: 'MainController'
+        })
+        .when('/permisos/editar', {
+            templateUrl: 'templates/permisos/form.html', controller: 'MainController'
+        })
         .when('/clientes/lista', {
             templateUrl: 'templates/clientes/lista.html', controller: 'MainController'
         })
