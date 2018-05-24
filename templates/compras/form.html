@@ -1,40 +1,32 @@
 <h2 class="titulo">Editar Compras</h2>
 
 <div class="row">
-    <div class="medium-3 columns"><label for="codigo_compra">Codigo</label></div>
-    <div class="medium-8 columns end"><input type="text" name="Codigo_Compra" /></div>
+    <div class="medium-3 columns"><label for="nombre">Tipo de documento</label></div>
+    <div class="medium-8 columns end"><input type="text" name="tipo" value="Venta" readonly /></div>
+</div>
+<div class="row">
+    <div class="medium-3 columns"><label for="Id_compra">Id</label></div>
+    <div class="medium-8 columns end"><input type="text" name="Id_Compra" /></div>
 </div>
 <div class="row">
     <div class="medium-3 columns"><label for="fecha">Fecha</label></div>
     <div class="medium-8 columns end"><input type="date" name="fecha" /></div>
 </div>
 <div class="row">
-    <div class="medium-3 columns"><label for="nombre">Nombre del Producto</label></div>
-    <div class="medium-8 columns end"><input type="text" name="nombre" /></div>
-</div>
-<div class="row">
-    <div class="medium-3 columns"><label for="nombre">Nombre del Proveedor</label></div>
-    <div class="medium-8 columns end"><input type="text" name="nombre" /></div>
-</div>
-<div class="row">
-    <div class="medium-3 columns"><label for="cantidad">Cantidad</label></div>
-    <div class="medium-8 columns end"><input type="text" name="cantidad" /></div>
-</div>
-<div class="row">
-        <div class="medium-3 columns"><label for="valor_unitario">Valor Unitario</label></div>
-        <div class="medium-8 columns end"><input type="text" name="valor_unitario" /></div>
+    <div class="medium-3 columns"><label for="cliente">Proveedores</label></div>
+    <div class="medium-8 columns end">
+        <select name="cliente">
+            <option>Proveedor 1</option>
+            <option>Proveedor 2</option>
+            <option>Proveedor 3</option>
+            <option>Proveedor 4</option>
+            <option>Proveedor 5</option>
+        </select>
     </div>
-<div class="row">
-    <div class="medium-3 columns"><label for="subtotal">SubTotal</label></div>
-    <div class="medium-8 columns end"><input type="text" name="subtotal" /></div>
 </div>
 <div class="row">
-    <div class="medium-3 columns"><label for="valor_iva">Valor Iva</label></div>
-    <div class="medium-8 columns end"><input type="text" name="valor_iva" /></div>
-</div>
-<div class="row">
-    <div class="medium-3 columns"><label for="valor_total">Valor Total</label></div>
-    <div class="medium-8 columns end"><input type="text" name="valor_total" /></div>
+    <div class="medium-3 columns"><label for="valor_total">Valor total</label></div>
+    <div class="medium-8 columns end"><input type="text" name="valor_total" value="$000.000" readonly /></div>
 </div>
 <div class="row">
     <div class="medium-3 columns"><label for="Estado">Estado</label></div>
@@ -46,11 +38,81 @@
         </select>
     </div>
 </div>
+<div class="row">
+    <div class="medium-2 columns item head">Producto</div>
+    <div class="medium-1 columns item head">Cant.</div>
+    <div class="medium-2 columns item head">Valor Unitario</div>
+    <div class="medium-2 columns item head">SubTotal</div>
+    <div class="medium-2 columns item head">Valor Iva</div>
+    <div class="medium-2 columns item head">Valor Total</div>
+    <div class="medium-1 columns item head">&nbsp;</div>
+</div>
+<hr>
+<div class="row">
+    <div class="medium-2 columns">
+        <select name="producto">
+            <option>Producto 1</option>
+            <option>Producto 2</option>
+            <option>Producto 3</option>
+            <option>Producto 4</option>
+        </select>
+    </div>
+    <div class="medium-1 columns"><input type="text" placeholder="0" /></div>
+    <div class="medium-2 columns"><input type="text" placeholder="$0" readonly /></div>
+    <div class="medium-2 columns"><input type="text" placeholder="$0" readonly /></div>
+    <div class="medium-2 columns"><input type="text" placeholder="$0" readonly /></div>
+    <div class="medium-3 columns"><button class="button"><i class="fi-plus"></i> Agregar</button></div>
+</div>
+<div class="row">
+    <div class="medium-2 columns item">Producto 1</div>
+    <div class="medium-1 columns item">1</div>
+    <div class="medium-2 columns item">$1.000</div>
+    <div class="medium-2 columns item">$1.000</div>
+    <div class="medium-2 columns item">$190</div>
+    <div class="medium-2 columns item">$1.190</div>
+    <div class="medium-1 columns item">
+        <a tooltips tooltip-template="Borrar detalle"><i class="fi-x">&nbsp;</i></a>
+    </div>
+</div>
+<div class="row">
+    <div class="medium-2 columns item">Producto 2</div>
+    <div class="medium-1 columns item">2</div>
+    <div class="medium-2 columns item">$2.000</div>
+    <div class="medium-2 columns item">$4.000</div>
+    <div class="medium-2 columns item">$760</div>
+    <div class="medium-2 columns item">$4.760</div>
+    <div class="medium-1 columns item">
+        <a tooltips tooltip-template="Borrar detalle"><i class="fi-x">&nbsp;</i></a>
+    </div>
+</div>
+<div class="row">
+    <div class="medium-2 columns item">Producto 3</div>
+    <div class="medium-1 columns item">3</div>
+    <div class="medium-2 columns item">$1.000</div>
+    <div class="medium-2 columns item">$3.000</div>
+    <div class="medium-2 columns item">$570</div>
+    <div class="medium-2 columns item">$3.570</div>
+    <div class="medium-1 columns item">
+        <a tooltips tooltip-template="Borrar detalle"><i class="fi-x">&nbsp;</i></a>
+    </div>
+</div>
+<div class="row">
+    <div class="medium-2 columns item">Producto 4</div>
+    <div class="medium-1 columns item">1</div>
+    <div class="medium-2 columns item">$1.000</div>
+    <div class="medium-2 columns item">$1.000</div>
+    <div class="medium-2 columns item">$190</div>
+    <div class="medium-2 columns item">$1.190</div>
+    <div class="medium-1 columns item">
+        <a tooltips tooltip-template="Borrar detalle"><i class="fi-x">&nbsp;</i></a>
+    </div>
+</div>
 
+<br>
 <div class="row">
     <div class="medium-12 columns">
         <input type="button" class="button default" value="Guardar" />
-        <a href="#/proveedores/lista" class="button alert">Regresar</a>
+        <a href="#/compras/lista" class="button alert">Regresar</a>
     </div>
 </div>
 <hr />

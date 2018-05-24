@@ -1,21 +1,23 @@
 <h2 class="titulo">Lista de Compras</h2>
-
+<hr>
 <div class="row">
     <div class="medium-3 columns">
-        <input type="text" placeholder="Codigo" />
+        <input type="text" placeholder="Id" />
     </div>
     <div class="medium-3 columns">
-        <input type="text" placeholder="Nombre del Producto" />
+        <input type="text" placeholder="Producto" />
     </div>
-    <div class="medium-3 columns">
-        <input type="date" placeholder="Fecha" />
+    <div class="medium-2 columns">
+        <input type="text" placeholder="Fecha Inicio" moment-picker="turno.inicio_receso" format="YYYY-MM-DD" />
     </div>
-    <div class="medium-3 columns">
+    <div class="medium-2 columns">
+        <input type="text" placeholder="Fecha Fin" moment-picker="turno.inicio_receso" format="YYYY-MM-DD" />
+    </div>
+    <div class="medium-2 columns">
         <a class="button default" href="#/compras/editar"><i class="fi-magnifying-glass"></i> Buscar</a>
     </div>
 </div>
-<hr />
-
+</hr>
 <div class="row">
     <div class="medium-12 columns">
         <a class="button default" href="#/compras/editar"><i class="fi-plus"></i> Crear Compras</a>
@@ -23,21 +25,19 @@
         <a class="button default" href="#"><i class="fi-page-pdf"></i> Imprimir PDF</a>
     </div>
 </div>
-
 <div class="row">
-    <div class="medium-2 columns item head">Codigo</div>
-    <div class="medium-2 columns item head">Producto</div>
+    <div class="medium-2 columns item head">Id</div>
+    <div class="medium-2 columns item head">Fecha</div>
     <div class="medium-2 columns item head">Cantidad</div>
     <div class="medium-2 columns item head">Valor Total</div>
     <div class="medium-2 columns item head">Estado</div>
     <div class="medium-2 columns item head">Acciones</div>
 </div>
-
 <div class="row">
     <div class="medium-2 columns item">1</div>
-    <div class="medium-2 columns item">Compra 1</div>
+    <div class="medium-2 columns item">0000-00-00</div>
     <div class="medium-2 columns item">1</div>
-    <div class="medium-2 columns item">1000</div>
+    <div class="medium-2 columns item">$1.900</div>
     <div class="medium-2 columns item">Cancelada</div>
     <div class="medium-2 columns item">
         <a href="#" tooltips tooltip-template="Editar"><i class="fi-pencil"></i></a>
@@ -45,32 +45,39 @@
         <a tooltips tooltip-template="Borrar"><i class="fi-trash"></i></a>
     </div>
 </div>
-
 <div class="row">
     <div class="medium-2 columns item">2</div>
-    <div class="medium-2 columns item">Compra 2</div>
+    <div class="medium-2 columns item">0000-00-00</div>
     <div class="medium-2 columns item">2</div>
-    <div class="medium-2 columns item">2000</div>
-    <div class="medium-2 columns item">Cerrada</div>
+    <div class="medium-2 columns item">$4.760</div>
+    <div class="medium-2 columns item">Cancelada</div>
     <div class="medium-2 columns item">
         <a href="#" tooltips tooltip-template="Editar"><i class="fi-pencil"></i></a>
         <a href="." tooltips tooltip-template="Descargar"><i class="fi-download"></i></a>
         <a tooltips tooltip-template="Borrar"><i class="fi-trash"></i></a>
     </div>
 </div>
-
 <div class="row">
     <div class="medium-2 columns item">3</div>
-    <div class="medium-2 columns item">Compra 3</div>
+    <div class="medium-2 columns item">0000-00-00</div>
     <div class="medium-2 columns item">3</div>
-    <div class="medium-2 columns item">3000</div>
-    <div class="medium-2 columns item">En Proceso</div>
+    <div class="medium-2 columns item">$3.570</div>
+    <div class="medium-2 columns item">Cancelada</div>
     <div class="medium-2 columns item">
         <a href="#" tooltips tooltip-template="Editar"><i class="fi-pencil"></i></a>
         <a href="." tooltips tooltip-template="Descargar"><i class="fi-download"></i></a>
         <a tooltips tooltip-template="Borrar"><i class="fi-trash"></i></a>
     </div>
 </div>
-
-<hr />
-<br />
+<div class="row">
+    <div class="medium-2 columns item">4</div>
+    <div class="medium-2 columns item">0000-00-00</div>
+    <div class="medium-2 columns item">1</div>
+    <div class="medium-2 columns item">$1.900</div>
+    <div class="medium-2 columns item">Cancelada</div>
+    <div class="medium-2 columns item">
+        <a href="#" tooltips tooltip-template="Editar"><i class="fi-pencil"></i></a>
+        <a href="." tooltips tooltip-template="Descargar"><i class="fi-download"></i></a>
+        <a tooltips tooltip-template="Borrar"><i class="fi-trash"></i></a>
+    </div>
+</div>
